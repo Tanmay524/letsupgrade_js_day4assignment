@@ -1,0 +1,28 @@
+<!-- Create a webpage containing two input fields and a button.
+A. Write something in the first input
+B. On click of the button, the content of input one should be copied in the second input -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy</title>
+</head>
+<body>
+   <h1>This is a copying input from one input field to another</h1> 
+  <div>
+      <input type="text" placeholder="text" id="first">
+      <input type="text" placeholder="copied text" id="second">
+      <button onclick="copyText()">click here</button>
+ </div>
+   
+   <script>
+       function copyText(){
+           let txt=document.getElementById("first");
+           let copy=document.getElementById("second");
+           copy.value=txt.value;       
+       }
+   </script>
+
+</body>
+</html>

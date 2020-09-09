@@ -1,0 +1,40 @@
+<!-- Create an array of objects with objects having the following properties
+A. {name (string), age (number), country (string), hobbies array (string [ ] ) }
+B. Write a function to display all the objects on the console -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object operation in js</title>
+</head>
+<body>
+   <h1>array of objects</h1> 
+   <script>
+       let arr=[
+           {
+            name:"virat kohli",
+            age:31,
+            country:"India",
+            hobbied:["cricket","adds","pubg"]  
+           }
+       ,{
+        name:"ABD",
+            age:36,
+            country:"SOuth Africa",
+            hobbied:["cricket","gualf","football"]  
+       },
+       {
+        name:"Gayle",
+            age:40,
+            country:"Jamaica",
+            hobbied:["cricket","adds","party","rap songs"]  
+       }]
+       function PrintObj(){
+           for(let i=0;i<arr.length;i++)
+           console.log(arr[i]);
+       }
+       PrintObj();
+   </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!-- Create a webpage containing an image and three buttons
+A. On click of the second button a change the existing image to a new image
+B. On click of the third button change it once again
+C. On click of first, the first image should come back -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image manipulation using javascript</title>
+</head>
+<body>
+    <h1>This is image manipulation html page</h1>
+    <img src="https://img1.hscicdn.com/image/upload/f_auto/esci/i/cricket/cricinfo/1197438_1296x729.jpg" id="gayle" width="500px"> 
+    <br/>
+    <button onclick="lImagechange()" >first click</button>
+    <button onclick="fImagechange()">second click</button>
+    <button onclick="sImagechange()">third click</button>
+    <script>
+        function fImagechange(){
+            let img=document.getElementById("gayle");
+            let newurl="https://im.rediff.com/cricket/2020/sep/01ab1.jpg?w=670&h=900";
+            img.src=newurl;
+        }
+        function sImagechange(){
+            let img=document.getElementById("gayle");
+            let newUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTeo1Ctgi7SbJfXB7PHpwRMuCSwDct87hRXWg&usqp=CAU";
+            img.src=newUrl;
+        }
+        function lImagechange(){
+            let img=document.getElementById("gayle");
+            let neWurl="https://img1.hscicdn.com/image/upload/f_auto/esci/i/cricket/cricinfo/1197438_1296x729.jpg";
+            img.src=neWurl;
+        }
+        
+    </script>
+</body>
+</html>

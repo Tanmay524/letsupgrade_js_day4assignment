@@ -1,0 +1,56 @@
+<!-- Following the 3rd question
+A. Write a function to display all the objects having age less than 30
+B. Write a function to display all the objects having country India -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>continued question 3</title>
+</head>
+<body>
+    <script>
+        let arr=[
+            {
+             name:"virat kohli",
+             age:30,
+             country:"India",
+             hobbied:["cricket","adds","pubg"]  
+            },
+            {
+             name:"ABD",
+                 age:28,
+                 country:"SOuth Africa",
+                 hobbied:["cricket","gualf","football"]  
+            },
+            {
+             name:"Gayle",
+                 age:40,
+                 country:"Jamaica",
+                 hobbied:["cricket","adds","party","rap songs"]  
+            }]
+        function Agelesthir(){
+            for(let i=0;i<arr.length;i++)
+            {
+                if(arr[i].age<'30')
+                {
+                    console.log(arr[i]);
+                }
+                
+            }
+        }
+        function Indcountry(){
+            for(let i=0;i<arr.length;i++)
+            {
+                if(arr[i].country==="India")
+                {
+                    console.log(arr[i]);
+                }
+                
+            }
+        }
+        Agelesthir()
+        Indcountry()
+    </script>
+</body>
+</html>
